@@ -1,6 +1,5 @@
 package collections.arraylist;
-
-import java.util.ArrayList;
+import java.util.*;
 
 public class one {
     public static void main(String[] args) {
@@ -12,17 +11,18 @@ public class one {
 
         System.out.println(al);
 
-        int first = 0;
-        int last = al.size() - 1;
+        // int first = 0;
+        // int last = al.size() - 1;
 
-        while (first < last) {
-            int temp = al.get(first);
-            al.set(first, al.get(last));
-            al.set(last, temp);
+        // while (first < last) {
+        //     int temp = al.get(first);
+        //     al.set(first, al.get(last));
+        //     al.set(last, temp);
 
-            first++;
-            last--;
-        }
+        //     first++;
+        //     last--;
+        // }
+        Collections.reverse(al);
 
         System.out.println(al);
     }
