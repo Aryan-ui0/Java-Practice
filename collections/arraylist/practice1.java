@@ -11,5 +11,6 @@ public class practice1 {
         System.out.println("Top element: " + stack.peek());
 
         System.out.println("Stack empty: " + stack.isEmpty());
+        
     }
 }
